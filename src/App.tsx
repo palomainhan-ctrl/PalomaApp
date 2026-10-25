@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {
-  BookOpen, Brush, Check, ChevronRight, Crown, Heart, Home, LockKeyhole,
-  Music2, Palette, Pencil, Play, Puzzle, RotateCcw, Sparkles, Star, Volume2,
+  BookOpen, Brush, Check, ChevronRight, Heart, Home, LockKeyhole,
+  Palette, Puzzle, RotateCcw, Sparkles, Star, Volume2,
   X
 } from 'lucide-react'
 
@@ -149,7 +149,7 @@ function App() {
                 <div className="board-top"><span><Brush size={17} /> Meu desenho</span><button className="subtle-button" onClick={() => setColored({})}><RotateCcw size={15} /> Recomeçar</button></div>
                 <div className="coloring-scene">
                   <button className="color-shape sun-doodle" style={{ backgroundColor: colored[0] || '#ffe7a3' }} onClick={() => setColored({ ...colored, 0: selectedColor })} aria-label="Pintar o sol">☀</button>
-                  <button className="color-shape flower-doodle" style={{ color: colored[1] || '#ff8fc7' }} onClick={() => setColored({ ...colored, 1: selectedColor })} aria-label="Pintar a flor}>✿</button>
+                  <button className="color-shape flower-doodle" style={{ color: colored[1] || '#ff8fc7' }} onClick={() => setColored({ ...colored, 1: selectedColor })} aria-label="Pintar a flor">✿</button>
                   <button className="color-shape butterfly-doodle" style={{ color: colored[2] || '#8ecbff' }} onClick={() => setColored({ ...colored, 2: selectedColor })} aria-label="Pintar a borboleta">🦋</button>
                   <button className="color-shape hill-doodle" style={{ backgroundColor: colored[3] || '#a5e6bd' }} onClick={() => setColored({ ...colored, 3: selectedColor })} aria-label="Pintar a colina" />
                   <span className="scene-cloud">☁️</span><span className="scene-cloud second">☁️</span>
